@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .15fr auto;
+    height: 100vmin;
+    margin: 0;
+}
+
+
+
+.caixaPai{
+    margin-top: 15%;
+}
+.caixaPrincipal{
+    background-color:#4F4F4F;
+    display: flex;
+    border-radius: 10%;
+    width: 370px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
