@@ -38,7 +38,6 @@ let numMin = document.getElementById("min");
         function verificar() {
             let numUser = Number(document.getElementById("num").value);
             contadorJogadas++; //Atualizando variável de jogadas.
-            console.log(valor);
             if (numUser < valor) {
                 numMin.innerHTML = numUser.toString();
                 if ((Number(numMax.innerHTML) - Number(numMin.innerHTML)) == 2) {
