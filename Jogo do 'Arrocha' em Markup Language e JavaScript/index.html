@@ -1,27 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Riquelme Oliveira Nascimento">
-    <title>Arrocha Game WebSite</title>
+    <title>Arrocha Game</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
 </head>
 
 <body>
 
-    <fieldset class="caixaPai">
-        <div class="caixaPrincipal">
-            <h1>Jogo do Arrocha</h1>
-            <form>
-                <label for="number"> Digite o número que deseja iniciar.</label>
-                <input type="submit" name="palpiteUsuario" id="palpite">
+    <header>
+        <h1>Arrocha Game</h1>
+    </header>
 
-            </form>
+    <section id="caixaPrincipal">
+        <div id="caixaPrimaria">
+            <p>
+                Clique aqui para gerar o número aleatório: <button type="submit" id="botao"
+                    onclick="iniciar()">Iniciar</button>
+            </p>
         </div>
-    </fieldset>
+        <div id="caixaSecundaria">
+            <p>
+                O Intervalo está entre em: <span id="min">0</span> e <span id="max">100</span>
+            </p>
+            <p>
+                Insira um número: <input type="number" id="num"></input>
+                <button type="submit" onclick="verificar()">Verificar</button>
+            </p>
+        </div>
+        <div id="caixaTerciaria">
+            <button type="submit" onclick="reiniciar()">Reiniciar</button>
+        </div>
+        <div id="caixaGanhador">
+            <h2>Parabéns!! Você ganhou!</h2>
+            <p id="res">O valor é: ??</p>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

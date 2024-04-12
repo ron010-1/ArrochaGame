@@ -1,25 +1,43 @@
-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .15fr auto;
-    height: 100vmin;
-    margin: 0;
+body {
+    background-color: rgb(76, 126, 126);
+    font: normal 15pt Arial;
 }
 
-
-
-.caixaPai{
-    margin-top: 15%;
+header {
+    color: white;
+    text-align: center;
 }
-.caixaPrincipal{
-    background-color:#4F4F4F;
+
+#caixaPrincipal {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px black;
     display: flex;
-    border-radius: 10%;
-    width: 370px;
-    height: 300px;
-    margin: 0 auto;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#caixaPrimaria {
+    display: block;
+}
+
+#caixaSecundaria {
+    display: none;
+}
+
+#caixaTerciaria {
+    display: none;
+}
+#caixaGanhador{
+    display: none;
+    text-align: center;
+}
+footer {
+    color: white;
+    font-style: italic;
+    text-align: center;
 }
